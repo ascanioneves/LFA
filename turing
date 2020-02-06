@@ -1,0 +1,34 @@
+->TURING
+->BBE
+->1 ESQ
+->2 SCAN<I> 1
+->3 HALT
+
+->TURING 
+->BBD
+->1 DIR
+->2 SCAN<I> 1
+->3 HALT
+
+->TURING
+->MAIN
+->1 CHECK_NOT_PAR
+
+->TURING
+->CHECK_NOT_PAR
+->1 DIR 
+->2 SCAN<#> 4
+->3 CHECK_PAR
+->4 DIR
+->5 IMP<N>
+->6 HALT
+
+->TURING 
+->CHECK_PAR
+->1 DIR
+->2 SCAN<#> 4
+->3 CHECK_NOT_PAR
+->4 DIR
+->5 IMP<S>
+->6 HALT
+
